@@ -31,7 +31,7 @@ gene.einfo({ format: 'json' }, function(err, response, data) {
 
 ### Streaming
 
-We use request https://github.com/request/request, Request provides both callback and streaming style api calls.
+We use (request)[https://github.com/request/request] - which provides both callback and streaming style api calls.
 ```
 import fs from 'fs'
 import {DB, dbFactory} from 'ncbi-entrez-api'
