@@ -1,7 +1,7 @@
 
 # Introduction
 
-The NCBI Entrez Api is a powerful resource for scientists, researchers, and engineers. The api allows consistent access patterns to over 40 databases. This module is a wrapper that allows calls to be made to the NCBI Entrez Api.
+The NCBI Entrez API is a powerful resource for scientists, researchers, and engineers. The api allows consistent access patterns to over 40 databases. This module is a wrapper that allows calls to be made to the NCBI Entrez API.
 
 
 ### Install
@@ -70,9 +70,12 @@ gene.efetch(options, callback)
 For a list of all api specific options, see
 http://www.ncbi.nlm.nih.gov/books/NBK25499/
 
-#### Returning json
-einfo, esummary, and efetch are the only 3 endpoints that currently return json. The rest return xml by default. 
+#### Returning JSON
+`einfo`, `esummary`, and `efetch` are the only 3 endpoints that currently return JSON. The rest return XML by default. 
+
+```
 options = {retmode: 'json'}
+```
 
 ### Examples
 ```
@@ -118,6 +121,8 @@ protein.efetch({
 ```
 
 ### efetch
-efetch pulls down full records in various formats. Each database supports different data formats.
-Use options.retmode and options.rettype to control the format. See link for all options
-http://www.ncbi.nlm.nih.gov/books/NBK25499/table/chapter4.T._valid_values_of__retmode_and/?report=objectonly
+`efetch` pulls down full records in various formats. Each database supports different data formats.
+
+Use `options.retmode` and `options.rettype` to control the format.
+
+See more options [here](http://www.ncbi.nlm.nih.gov/books/NBK25499/table/chapter4.T._valid_values_of__retmode_and/?report=objectonly).
